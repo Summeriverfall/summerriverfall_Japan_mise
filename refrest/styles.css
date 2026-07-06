@@ -1897,3 +1897,15 @@ html[lang="zh-CN"] .hero-nav-pill {
 .opt-badge{ background:#2f8a86; border-radius:0; }
 .service-card{ border-radius:0; }
 .section-header h2::after{ content:""; display:block; width:30px; height:3px; background:#2f8a86; margin:1rem auto 0; }
+
+/* ===== BRAND LAYOUT (patch): Refrest — modern minimal / full-bleed ===== */
+.hero-content{ text-align:left; }
+.hero-sub{ margin-left:0; margin-right:0; }
+.hero-cta{ flex-direction:row; flex-wrap:wrap; width:auto; margin-inline:0; }
+.hero-quick-nav{ justify-content:flex-start; }
+.section-header{ text-align:left; }
+.section-header h2{ text-transform:uppercase; letter-spacing:0.06em; }
+.section-header h2::after{ margin-left:0; margin-right:auto; }
+.service-photo{ border-radius:0; box-shadow:none; }
+.service-card-wide{ max-width:none; margin:0; }
+.btn-booking{ border-radius:0; }

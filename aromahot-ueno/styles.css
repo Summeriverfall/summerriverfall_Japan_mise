@@ -1893,3 +1893,11 @@ html[lang="zh-CN"] .hero-nav-pill {
 .opt-badge{ background:#c0894a; border-radius:40px; }
 .service-card{ border-radius:22px; }
 .section-header h2::after{ content:""; display:block; width:64px; height:1px; background:#d8b489; margin:1rem auto 0; }
+
+/* ===== BRAND LAYOUT (patch): Aroma Hot — soft catalog / overlap ===== */
+.hero-cta{ flex-direction:row; flex-wrap:wrap; justify-content:center; width:auto; }
+.service-photo{ border-radius:26px; }
+.service-card-wide{ border-radius:24px; margin-top:-3rem; position:relative; z-index:2; max-width:540px; box-shadow:0 10px 34px rgba(58,44,30,0.10); }
+/* aroma overlap fix (patch) */
+.service-photo{ margin-bottom:0; }
+.service-card-wide{ margin-top:-2rem; }

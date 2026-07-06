@@ -1891,3 +1891,15 @@ html[lang="zh-CN"] .hero-nav-pill {
 .btn-primary:hover{ background:transparent; color:#2e5c46; border-color:#3f7d5f; }
 .opt-badge{ background:#3f7d5f; }
 .section-header h2::after{ content:"\2740"; display:block; color:#3f7d5f; font-size:1rem; margin:0.55rem auto 0; line-height:1; }
+
+/* ===== BRAND LAYOUT (patch): Fukurai — asymmetric / card-left ===== */
+.section-header{ text-align:left; }
+.section-header h2::after{ margin-left:0; margin-right:auto; }
+.intro-text{ order:2; }
+.intro-features{ order:1; }
+@media (min-width:820px){
+  .services .container:has(.service-photo){ display:grid; grid-template-columns:0.95fr 1.05fr; column-gap:3.5rem; align-items:center; }
+  .services .container:has(.service-photo) .section-header{ grid-column:1 / -1; }
+  .services .container:has(.service-photo) .service-photo{ order:2; margin:0; }
+  .services .container:has(.service-photo) .service-card-wide{ order:1; max-width:none; margin:0; }
+}
