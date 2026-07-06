@@ -1871,3 +1871,29 @@ html[lang="zh-CN"] .hero-nav-pill {
 .hero-content h1, .intro-text h2, .section-header h2, .visit-info h2 { text-wrap: balance; }
 .hero-sub, .intro-text p, .section-sub, .footer-tagline, .includes li, .visit-item p { text-wrap: pretty; }
 .hero-content h1 { overflow-wrap: anywhere; }
+
+/* ===== BRAND THEME (patch): Refrest — slate / modern ===== */
+:root{
+  --cream:#f2f5f6; --cream-dark:#e3e9ec;
+  --charcoal:#243139; --charcoal-light:#5a6b76;
+  --gold:#2f8a86; --gold-light:#57b0ab;
+  --blush:#d3e0e2; --blush-deep:#a9c7c8;
+  --radius:0px;
+  --font-display:"Noto Sans JP","Inter",sans-serif;
+}
+.hero-slide::after{
+  background:linear-gradient(180deg, rgba(22,32,38,0.30) 0%, rgba(22,32,38,0.62) 100%);
+}
+.hero-content h1{ color:#f3fafa; font-weight:500; }
+.hero-sub{ color:rgba(243,250,250,0.9); }
+.hero-tag{ color:#7fd0cb; }
+.hero-nav-pill{ color:#f3fafa; border-color:rgba(243,250,250,0.45); }
+.hero-nav-pill:hover{ background:rgba(243,250,250,0.15); }
+.hero-scroll span{ color:rgba(243,250,250,0.85); }
+.scroll-line{ background:linear-gradient(to bottom, rgba(243,250,250,0.8), transparent); }
+.btn{ border-radius:0; }
+.btn-primary{ background:#2f8a86; color:#fff; border-color:#2f8a86; }
+.btn-primary:hover{ background:transparent; color:#f3fafa; border-color:#f3fafa; }
+.opt-badge{ background:#2f8a86; border-radius:0; }
+.service-card{ border-radius:0; }
+.section-header h2::after{ content:""; display:block; width:30px; height:3px; background:#2f8a86; margin:1rem auto 0; }

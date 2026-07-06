@@ -1871,3 +1871,29 @@ html[lang="zh-CN"] .hero-nav-pill {
 .hero-content h1, .intro-text h2, .section-header h2, .visit-info h2 { text-wrap: balance; }
 .hero-sub, .intro-text p, .section-sub, .footer-tagline, .includes li, .visit-item p { text-wrap: pretty; }
 .hero-content h1 { overflow-wrap: anywhere; }
+
+/* ===== BRAND THEME (patch): Ichiryu — crimson / Taiwanese premium ===== */
+:root{
+  --cream:#f6efe9; --cream-dark:#ece0d7;
+  --charcoal:#2a1a17; --charcoal-light:#70534d;
+  --gold:#9e2b25; --gold-light:#c25a52;
+  --blush:#e8d0c9; --blush-deep:#caa79e;
+  --radius:1px;
+  --font-display:"Shippori Mincho","Noto Serif JP",serif;
+}
+.hero-slide::after{
+  background:
+    radial-gradient(ellipse at 65% 12%, rgba(158,43,37,0.20) 0%, transparent 55%),
+    linear-gradient(180deg, rgba(26,13,11,0.34) 0%, rgba(26,13,11,0.68) 100%);
+}
+.hero-content h1{ color:#fdf6f2; }
+.hero-sub{ color:rgba(253,246,242,0.9); }
+.hero-tag{ color:#eab4ae; }
+.hero-nav-pill{ color:#fdf6f2; border-color:rgba(253,246,242,0.45); }
+.hero-nav-pill:hover{ background:rgba(253,246,242,0.15); }
+.hero-scroll span{ color:rgba(253,246,242,0.85); }
+.scroll-line{ background:linear-gradient(to bottom, rgba(253,246,242,0.8), transparent); }
+.btn-primary{ background:#9e2b25; color:#fff; border-color:#9e2b25; }
+.btn-primary:hover{ background:transparent; color:#fdf6f2; border-color:#fdf6f2; }
+.section-header h2::after{ content:""; display:block; width:46px; height:2px; background:#9e2b25; margin:0.9rem auto 0; }
+.opt-badge{ background:#9e2b25; }
