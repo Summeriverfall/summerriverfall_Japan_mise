@@ -48,6 +48,20 @@
     function next() {
       goTo((current + 1) % slides.length);
     }
+    function prev() {
+      goTo((current - 1 + slides.length) % slides.length);
+    }
+    var heroEl = document.querySelector(".hero");
+    if (heroEl) {
+      var hsx = null, hsy = null;
+      heroEl.addEventListener("touchstart", function (e) { hsx = e.touches[0].clientX; hsy = e.touches[0].clientY; }, { passive: true });
+      heroEl.addEventListener("touchend", function (e) {
+        if (hsx === null) return;
+        var dx = e.changedTouches[0].clientX - hsx, dy = e.changedTouches[0].clientY - hsy;
+        if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) { if (dx < 0) next(); else prev(); resetInterval(); }
+        hsx = null; hsy = null;
+      }, { passive: true });
+    }
 
     dots.forEach(function (dot) {
       dot.addEventListener("click", function () {
