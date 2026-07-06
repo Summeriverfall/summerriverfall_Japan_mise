@@ -1901,3 +1901,9 @@ html[lang="zh-CN"] .hero-nav-pill {
 /* aroma overlap fix (patch) */
 .service-photo{ margin-bottom:0; }
 .service-card-wide{ margin-top:-2rem; }
+
+/* hero CTA centered fix (patch) */
+.hero-content{ text-align:center; }
+.hero-sub{ margin-left:auto; margin-right:auto; }
+.hero-cta{ flex-direction:column; align-items:stretch; width:fit-content; margin-inline:auto; }
+.hero-quick-nav{ justify-content:center; }

@@ -1903,3 +1903,9 @@ html[lang="zh-CN"] .hero-nav-pill {
   .services .container:has(.service-photo) .service-photo{ order:2; margin:0; }
   .services .container:has(.service-photo) .service-card-wide{ order:1; max-width:none; margin:0; }
 }
+
+/* hero CTA centered fix (patch) */
+.hero-content{ text-align:center; }
+.hero-sub{ margin-left:auto; margin-right:auto; }
+.hero-cta{ flex-direction:column; align-items:stretch; width:fit-content; margin-inline:auto; }
+.hero-quick-nav{ justify-content:center; }
