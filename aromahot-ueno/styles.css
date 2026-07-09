@@ -1925,3 +1925,8 @@ html[lang="zh-CN"] .hero-nav-pill {
 .opt-row .opt-name{font-weight:500;font-size:1rem;letter-spacing:.02em;}
 .opt-row .opt-sub{font-size:.82rem;font-weight:300;color:var(--charcoal-light);line-height:1.5;letter-spacing:0;}
 @media(max-width:768px){.service-intro{flex-direction:column;gap:1.3rem;align-items:stretch;}.service-intro .service-photo{flex:none;width:100%;}}
+
+/* option-static (display-only add-ons) */
+.opt-row.opt-static{cursor:default;}
+.opt-row.opt-static:hover{border-color:rgba(184,149,107,.3);box-shadow:none;}
+.option-note{margin:0 0 1.3rem;font-size:.9rem;color:var(--charcoal-light);line-height:1.65;}
